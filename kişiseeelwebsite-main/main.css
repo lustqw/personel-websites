@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.3s;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-image: url("bg.jpg")
+}
+body.dark .pantreas {
+  background: #1a1a1a;
+  border: 5px solid #090909;
+}
+body.dark .avatar2 {
+  border: 10px solid #1a1a1a;
+}
+body.dark .social-media i {
+  background: #232323;
+}
+body.dark .detailed {
+  background: #232323;
+}
+body.dark .nicked {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .selection {
+    margin-top: 1rem;
+  }
+
+  .nicked, .biograf {
+    text-align: center;
+  }
+}
+.pantreas {
+  position: relative;
+  border-radius: 0.725rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.pantreas .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.pantreas .avatar2 {
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.pantreas .social-media {
+  margin-top: 2rem;
+  z-index: 2;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+.pantreas .social-media i {
+  font-size: 2rem;
+  padding: 0.4rem;
+  color: rgb(71, 71, 71);
+  border-radius: 0.725rem;
+  transition: all 300ms ease-in;
+}
+.pantreas .social-media i:hover {
+  transform: translateY(-15px);
+}
+
+.border-thick {
+  scale: 1.1;
+  border: 3px solid #fff;
+  border-radius: 0 0.275rem 0.725rem 0.725rem;
+}
+
+.fw-5 {
+  font-weight: 300;
+}
+.fw-6 {
+  font-weight: 400;
+}
+.fw-7 {
+  font-weight: 500;
+}
+.fw-8 {
+  font-weight: 600;
+}
+.fw-9 {
+  font-weight: 900;
+}
+.fs-6 {
+  font-size: 1em;
+}
+.fs-7 {
+  font-size: 1.5em;
+}
+.fs-8 {
+  font-size: 2.2em;
+}
+.fs-9 {
+  font-size: 3em;
+}
+
+.low-op-en {
+  opacity: 0.3;
+  user-select: none;
+  color: gray;
+  transition: all 300ms ease-in;
+}
+.low-op-en:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
